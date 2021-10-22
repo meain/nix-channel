@@ -12,8 +12,12 @@ buildGoModule rec {
   };
 
   vendorSha256 = "sha256-XWdPyHJF/LGTjUllqbPPn+B/19XgoMP9Au6/fnl/YXg=";
-
   runVend = true;
+
+  postInstall = ''
+    mkdir -p $out
+    cp index.html $out/index.html
+  '';
 
   meta = with lib; {
     description = "Convert Github issues and PRs into an rss feed";
