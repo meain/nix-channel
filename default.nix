@@ -9,6 +9,7 @@ let
     fluent-theme = callPackage ./packages/fluent-theme {};
     kmonad = callPackage ./packages/kmonad {};
     traffic = callPackage ./packages/traffic {};
+    notmuch-git = callPackage ./packages/notmuch-git {};
   };
 in
 self
