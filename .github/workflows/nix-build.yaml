@@ -18,7 +18,7 @@ jobs:
         nix_path: "nixpkgs=${{ steps.pinned_nixpkgs.outputs.url }}"
     - name: "Build packages"
       run: |
-          nix-channel --add https://nixos.org/channels/nixpkgs-21.05 nixpkgs
+          nix-channel --add https://nixos.org/channels/nixos-21.05 nixpkgs
           nix-channel --update
           export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
           nix-build
