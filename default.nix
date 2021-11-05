@@ -10,6 +10,7 @@ let
     kmonad = callPackage ./packages/kmonad {};
     traffic = callPackage ./packages/traffic {};
     notmuch-git = callPackage ./packages/notmuch-git {};
+    gnomeExtensions.steal-my-focus = callPackage ./packages/steal-my-focus {};
   };
 in
 self
