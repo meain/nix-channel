@@ -11,6 +11,8 @@ let
     traffic = callPackage ./packages/traffic {};
     notmuch-git = callPackage ./packages/notmuch-git {};
     gnomeExtensions.steal-my-focus = callPackage ./packages/steal-my-focus {};
+
+    buf = callPackage ./packages/buf {};
   };
 in
 self
