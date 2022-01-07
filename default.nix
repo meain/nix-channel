@@ -9,6 +9,7 @@ let
     traffic = callPackage ./packages/traffic {};
     gh-issues-to-rss = callPackage ./packages/gh-issues-to-rss {};
     tojson = callPackage ./packages/tojson {};
+    toffee = callPackage ./packages/toffee {};
 
     # external
     fluent-theme = callPackage ./packages/fluent-theme {};
