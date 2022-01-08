@@ -10,6 +10,7 @@ let
     gh-issues-to-rss = callPackage ./packages/gh-issues-to-rss {};
     tojson = callPackage ./packages/tojson {};
     toffee = callPackage ./packages/toffee {};
+    quickserve = callPackage ./packages/quickserve {};
 
     # external
     fluent-theme = callPackage ./packages/fluent-theme {};
