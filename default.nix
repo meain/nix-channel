@@ -17,6 +17,7 @@ let
     kmonad = callPackage ./packages/kmonad {};
     # notmuch-git = callPackage ./packages/notmuch-git {};
     gnomeExtensions.steal-my-focus = callPackage ./packages/steal-my-focus {};
+    grpc-gateway = callPackage ./packages/grpc-gateway {};
 
     ## programming
     # buf = callPackage ./packages/buf {};
