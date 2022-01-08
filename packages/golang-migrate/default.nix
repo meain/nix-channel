@@ -11,15 +11,10 @@ buildGoModule rec {
     sha256 = "sha256-t4F4jvXexxCqKINaaczeG/B2vLSG87/qZ+VQitfAF4Y=";
   };
 
+  subPackages = [ "cmd/migrate" ];
   vendorSha256 = "sha256-qgjU8mUdk8S0VHmWiTK/5euwhRQ4y3o4oRxG2EHF+7E=";
-
-  buildPhase = ''
-        cd cmd/migrate
-
-        go install \
-          -ldflags='-X main.Version=${version} -extldflags "-static"' \
-          -tags '${tags}'
-  '';
+  inherit tags;
+  ldflags = "-X main.Version=${version}";
 
   meta = with lib; {
     description = "Database migrations. CLI and Golang library.";

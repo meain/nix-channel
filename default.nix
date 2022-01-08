@@ -19,7 +19,7 @@ let
     gnomeExtensions.steal-my-focus = callPackage ./packages/steal-my-focus { };
     grpc-gateway = callPackage ./packages/grpc-gateway { };
     # golang-migrate::tags: postgres mysql redshift cassandra spanner cockroachdb clickhouse file go_bindata github aws_s3 google_cloud_storage godoc_vfs gitlab
-    golang-migrate = callPackage ./packages/golang-migrate { tags = "postgres file"; }; # with proper build tags
+    golang-migrate-pg = callPackage ./packages/golang-migrate { tags = ["postgres" "file"]; }; # with proper build tags
 
     ## programming
     # buf = callPackage ./packages/buf {};
