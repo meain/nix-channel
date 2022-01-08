@@ -12,7 +12,7 @@ buildGoModule rec {
   };
 
   vendorSha256 = "sha256-XWdPyHJF/LGTjUllqbPPn+B/19XgoMP9Au6/fnl/YXg=";
-  runVend = true;
+  proxyVendor = true;
 
   postInstall = ''
     mkdir -p $out
